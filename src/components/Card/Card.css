@@ -1,6 +1,6 @@
 .card {
-  background-color: #000;
-  background-image: radial-gradient(#101515, #000);
+  background-color: #111;
+  background-image: radial-gradient(#171717, #111);
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px 20px;
@@ -40,7 +40,8 @@
 
 .card-header-inner {
   position: absolute;
-  font-family: 'Futura', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
   font-size: 36px;
   left: 50%;
   top: 38%;
@@ -66,7 +67,8 @@
 .card-waiting {
   font-size: 30px;
   text-align: center;
-  font-family: 'Futura', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
   margin-bottom: 40px;
 }
 

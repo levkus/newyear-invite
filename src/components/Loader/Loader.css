@@ -35,16 +35,16 @@
 }
 
 .ring.red-back {
-  stroke: rgba(228, 134, 135, 0.4);
+  stroke: red;
   stroke-width: 2;
 }
 
 .ring.red-front {
-  stroke: #E48687;
-  stroke-dasharray: 10 200;
+  stroke: #fff;
+  stroke-dasharray: 140 200;
   animation: dash 2s linear infinite 0.2s;
   transform-origin: center;
-  opacity: 0;
+
   /*stroke-width: 8;*/
 }
 
@@ -52,8 +52,8 @@
   0% {
     transform: rotate(0deg);
     /*stroke-dasharray: 10px 10px;*/
-    stroke-width: 0;
-    opacity: 0;
+    stroke-width: 4;
+    opacity: 1;
   }
   50% {
     stroke-width: 4;
@@ -62,7 +62,7 @@
   100% {
     transform: rotate(360deg);
     /*stroke-dasharray: 100px 400px;*/
-    opacity: 0;
-    stroke-width: 0;
+    opacity: 1;
+    stroke-width: 4;
   }
 }

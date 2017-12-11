@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Avenir';
-  src: url('./assets/fonts/Avenir.woff') format('woff'),
-       url('./assets/fonts/Avenir.ttf')  format('truetype');
+  src: url('./assets/fonts/AvenirNextCyr-Light.woff') format('woff'),
+       url('./assets/fonts/AvenirNextCyr-Light.ttf')  format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +19,7 @@
 }
 
 body {
-  background-color: #181818;
+  background-color: #222;
   font-family: "Avenir", sans-serif;
   color: #fff;
 }
@@ -30,9 +30,11 @@ h1 {
 }
 
 h1, h2 {
-  font-family: 'Futura';
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
 }
 
 ul {
   padding-left: 20px;
+  list-style-type: square;
 }
