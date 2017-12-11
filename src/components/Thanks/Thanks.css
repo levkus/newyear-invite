@@ -1,0 +1,25 @@
+.thanks {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  color: #74BAB4;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.thanks-text {
+
+}
+
+.thanks-gif-container {
+  margin-top: 40px;
+  max-width: 300px;
+  position: relative;
+}
+
+.thanks-gif {
+  width: 100%;
+}
