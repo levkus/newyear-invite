@@ -1,31 +1,36 @@
 .button {
-  padding: 10px;
-  border: 1px solid #99E8E2;
-  background: transparent;
-  border-radius: 0;
-  color: #74BAB4;
-  transition: .3s;
-  flex-grow: 1;
-}
-
-.button:not(:last-child) {
-  margin-right: 20px;
+  background-image: url('../../assets/btn.svg');
+  background-color: transparent;
+  width: 200px;
+  height: 56px;
+  color: #fff;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  transition: color .3s;
 }
 
 .button:hover {
-  background-color: #74BAB4;
-  border: 1px solid #74BAB4;
-  color: #fff;
+  color: red;
 }
 
-@media (max-width: 640px) {
+.button:focus {
+  outline: none;
+}
+
+
+@media (max-width: 580px) {
   .button {
     width: 100%;
-    margin-right: 0;
+    height: 70px;
+    margin-bottom: 20px;
   }
 
-  .button:not(:last-child) {
-    margin-bottom: 20px;
-    margin-right: 0;
+  .button:last-child {
+    margin-bottom: 0;
   }
 }

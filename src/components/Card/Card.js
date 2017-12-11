@@ -1,34 +1,68 @@
 import React from 'react'
 import './Card.css'
 
-const Card = ({ renderHeader, renderButtons, text, signature }) => (
+const Card = ({ renderHeader, renderButtons }) => (
   <div className='card'>
-    <div className='card-top' />
-    <div className='card-bottom' />
-    <div className='card-wrap' />
-    <div className='card-header'>{renderHeader()}</div>
-    <div className='card-separator-one' />
-    <div className='card-text'>{text}</div>
-    <div className='card-details'>
-      <div className='card-detail'>
-        <div className='card-label'>время:</div>
-        <div className='card-data'>07.07.2018 15:00</div>
-      </div>
-      <div className='card-detail'>
-        <div className='card-label'>место:</div>
-        <div className='card-data'>
-          <span>Кафе "Среда"</span>
-          <span className='card-brackets'>(
-            <a className='card-place-link' href='https://goo.gl/maps/aZxmPqPJ8fR2' target='_blank' rel='noreferrer noopener'>Где это?</a>
-          )</span>
-        </div>
-      </div>
+    <div className='card-decor' />
+    <div className='card-header'>
+      <div className='card-header-inner'>{renderHeader()}</div>
     </div>
-    <div className='card-signature'>{signature}</div>
-    <div className='card-separator-two' />
-    <div className='card-before-buttons'>Внимание! Выбор правильной кнопочки нам очень поможет:</div>
-    <div className='card-buttons'>{renderButtons()}</div>
-    <div className='card-thanks'>Подсказка: первая кнопка - всегда отличный выбор.</div>
+    <div className='card-content'>
+      <div className='card-text'>
+        <h1>Пати для избранных отбросов 18+</h1>
+        <ul>
+          <li>{`Если тебя задело одно только название, дальше лучше не читать ;)`}</li>
+          <li>{`Если ты чтишь традиции и считаешь, что Новый Год нужно встречать в дружном кругу семьи, то это предложение тебя не заинтересует.`}</li>
+          <li>{`Если у тебя есть друзья, которые для тебя как семья, и ты хочешь встречать Новый Год с ними (И ЭТО НЕ МЫ), то мы обиделись!`}</li>
+          <li>{`Если ты тот странный человек, который встречает Новый Год с одними, чтобы отпраздновать с другими... ну что поделать, пиши нам - скажем когда приезжать и что привезти.`}</li>
+          <li>{`Если у тебя +1, +3 или -2, тоже пиши - придумаем что с вами всеми делать.`}</li>
+          <li>{`Если ты хочешь к нам, но лежишь в больнице (единственная годная отмазка) - придумаем когда повторить :)`}</li>
+        </ul>
+        <h2>От тебя потребуется:</h2>
+        <ul>
+          <li>{`помощь в организации`}</li>
+          <li>{`помощь в уборке после мероприятия`}</li>
+          <li>{`скинуть бабосики`}</li>
+          <li>{`явиться (внезапно)`}</li>
+        </ul>
+        <h2>Ограничения:</h2>
+        <ul>
+          <li>{`Так как дыры в стене никуда не делись, в какой-то момент громкость будет ограничена.`}</li>
+          <li>{`Курить только на балконе и тихо (кроме шуток). Громко можно на улице. Вэйпить можно дома.`}</li>
+          <li>{`"Дудки" на территории дома (балкон и подъезд включительно) запрещены.`}</li>
+          <li>{`На вопрос "А кто еще будет?" отвечаем сразу: Если тебе мало того что будем мы, то мы обиделись!`}</li>
+        </ul>
+        <h2>Дресс-код:</h2>
+        <ul>
+          <li>{`Девочки, давайте больше сисек и попок! У меня слишком мало =(`}</li>
+          <li>{`Мальчики, больше голых мышц, а то одному Льву сисек будет слишком много =)`}</li>
+        </ul>
+        <h2>Что тебя ждет:</h2>
+        <ul>
+          <li>{`Трата времени и денег!`}</li>
+        </ul>
+        <h2>А так же:</h2>
+        <ul>
+          <li>{`пища богов`}</li>
+          <li>{`тазик оливье из качественных ингредиентов`}</li>
+          <li>{`море алкогольных напитков`}</li>
+          <li>{`речка безалкогольных`}</li>
+          <li>{`вкусный десерт`}</li>
+          <li>{`музыкальное сопровождение`}</li>
+          <li>{`музыкальное сопровождение в твоем исполнении`}</li>
+          <li>{`настольные (и не только) игры`}</li>
+          <li>{`бессоница`}</li>
+          <li>{`вечелые и интересные люди (если ты придешь, разумеется)`}</li>
+          <li>{`подарки от секрет санты`}</li>
+          <li>{`2 милых котика`}</li>
+          <li>{`дамские сиськи, попки и мужская груда мышц`}</li>
+          <li>{`исходя из практики, возможно, секс =)`}</li>
+        </ul>
+      </div>
+      <div className='card-buttons'>{renderButtons()}</div>
+      <div className='card-waiting'>Очень вас ждем бла бла бла</div>
+      <div className='card-bottom' />
+    </div>
   </div>
 )
 

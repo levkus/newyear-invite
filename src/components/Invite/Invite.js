@@ -4,7 +4,6 @@ import { Redirect } from 'react-router-dom'
 import Card from '../Card/Card'
 import Button from '../Button/Button'
 import Loader from '../Loader/Loader'
-import Envelope from '../Envelope/Envelope'
 import Error from '../Error/Error'
 
 import './Invite.css'
@@ -44,10 +43,7 @@ export default class Invite extends Component {
 
   renderHeader = () => {
     const { alias } = this.state
-    return (<div>
-      <div>{alias.greeting}</div>
-      <div>{alias.name}</div>
-    </div>)
+    return <div>{`${alias.greeting} ${alias.name}`}</div>
   }
 
   sendFeedback = (type) => () => {
@@ -81,17 +77,13 @@ export default class Invite extends Component {
     } else if (submitted) {
       return <Redirect to='/thanks' push />
     }
-    const { text, signature } = alias
+
     return(
       <div className='invite'>
-        <Envelope>
-          <Card
-            renderHeader={this.renderHeader}
-            renderButtons={this.renderButtons}
-            text={text}
-            signature={signature}
-          />
-        </Envelope>
+        <Card
+          renderHeader={this.renderHeader}
+          renderButtons={this.renderButtons}
+        />
       </div>
     )
   }

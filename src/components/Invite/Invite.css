@@ -1,16 +1,10 @@
 .invite {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  /*background-image: url('./bg.jpg');*/
-  background-size: cover;
-  background-position: center;
+  padding: 40px 0;
 }
 
 
-@media (max-width: 640px) and (orientation: portrait) {
+@media (max-width: 800px) {
   .invite {
-    background-image: url('./bg-mobile.jpg');
+    padding: 0;
   }
 }
